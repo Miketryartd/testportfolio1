@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="home.css">
+    <title>Art by Mike</title>
+</head>
+<body>
+   <header id="header">
+    <ul>
+        <li><h1 href="#">Art by Mike<i class='bx bxs-palette'></i></h1></li>
+        <li><button id="mobileDesignMenu"><i class='bx bx-menu'></i></button></li>
+      
+        <li id="pcDesign"><a href="#">Home</a></li>
+        <li id="pcDesign"><a href="#">Blog</a></li>
+        <li id="pcDesign"><a href="#">Portfolio</a></li>
+        <li id="pcDesign"><a href="#">Timelapses</a></li>
+        <li id="pcDesign"><a href="#">Tutorials</a></li>
+        <li id="pcDesign"><a href="#contact">Contact</a></li>
+      
+    </ul>
+   </header>
+   
+   <div id="mobileMenu" class="mobileMenu">
+    <div class="mobileContainer">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Timelapses</a></li>
+        <li><a href="#">Tutorials</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    </div>
+   </div>
+   <div class="welcomeParent">
+   <div class="welcomePage">
+   <ul>
+    <li> <h1>Welcome to my creative space!</h1></li>
+    <li><p>Hello guys I'm Mike, an artist dedicated to bringing imagination to life through vibrant and expressive artworks. Here, you'll find a showcase of my latest pieces, opportunities to commission custom art, tutorials to spark your creativity, and a platform to connect with me directly. Dive into my artistic journey and explore a world where creativity knows no bounds. Let's create something amazing together!</p></li>
+   </ul>
+    
+   </div>
+</div>
+<div class="showcaseParent">
+   <div class="showcasePage">
+   <ul id="pcDesign">
+    <li><h1>Showcase</h1></li>
+    <li><p>Like what you see? Check out the full extent of my work here<i class='bx bx-down-arrow-alt'></i></p></li>
+    <li><button><a href="showcase.html">See full portfolio here.</a></button></li>
+    
+   </ul>
+   
+   <div class="showcaseGrid" id="showcaseGrid">
+    <img src="17.jpg" id="showcaseImage" alt="Showcase Image" href="showcase.html">
+    <!--more image later bitch-->
+    <div class="showcaseButtons">
+    <button id="prev"><i class='bx bxs-left-arrow-alt'></i></button>
+    <button id="next"><i class='bx bxs-right-arrow-alt'></i></button>
+</div>
+   </div>
+   
+
+   </div>
+ 
+
+ </div>
+
+ <div class="timelapseParent">
+    <div class="timelapsePage">
+        <div class="timelapseVideo">
+            <video src="Princess.mp4" controls></video>
+        </div>
+        <ul id="pcDesign">
+            <li><h1>Timelapse</h1></li>
+            <li><p>Watch my art-making process in action!</p></li>
+            <li><button><a href="#">See more timelapses.</a></button></li>
+        </ul>
+
+        
+    </div>
+ </div>
+ 
+
+ <div class="tutorialParent">
+    <div class="tutorialPage">
+        <ul id="pcDesign">
+            <li><h1>Tutorials</h1></li>
+            <li><p>Draw with me and find tips that might help you in your art journey!</p></li>
+            <li><button><a href="#">See full tutorials here.</a></button></li>
+        </ul>
+
+        <div class="tutorialVideo">
+            <video src="2024-07-10 08-26-21.mp4" controls></video>
+            <ul id="mobileDesign">
+                <li><h1>Tutorials</h1></li>
+                <li><p>SS</p></li>
+            </ul>
+        </div>
+    </div>
+ </div>
+
+ 
+ <div class="blogParent">
+    <div class="blogPage">
+        
+        <div class="blogImage">
+            <img src="w123.png">
+         </div>
+        <ul id="pcDesign">
+            <li><h1>Blog</h1></li>
+            <li><p>See new insights and projects.</p></li>
+            <li><button><a href="#">See blog.</a></button></li>
+        </ul>
+    </div>
+ </div>
+
+ <div class="commissionParent" id="contact">
+    <div class="commissionPage">
+        <ul>
+            <li><h1>Available for commission</h1></li>
+        </ul>
+    </div>
+ </div>
+
+ <div class="contactParent">
+ <div class="contactForm">
+  <ul>
+    <li><h2>Name</h2><input type="text" placeholder="Enter your name" id="name"></li>
+    <li><h2>Email</h2><input type="email" placeholder="Enter your email" id="email"></li>
+    <li><h2>Message</h2><textarea placeholder="Aa.." id="message"></textarea></li>
+    <li><button id="submitBtn" onclick="sendMail()">Submit</button></li>
+  </ul>
+   
+</div>
+</div>
+
+<div class="footerParent">
+<footer>
+    <ul id="ul">
+
+        <li><a href="#"><i class='bx bxl-meta' ></i></a></li>
+        <li><a href="#"><i class='bx bxl-instagram-alt' ></i></a></li>
+        <li><a href="#"><i class='bx bxl-youtube' ></i></a></li>
+    </ul>
+    <ul>
+        <div class="lock">
+        <li><h3><a href="#">Art by Mike<i class='bx bxs-palette' ></i></a></h3></li>
+        <li><a href="#">Copyright © Art by Mike 2024. All rights reserved.</a></li>
+    </div>
+        <div class="locked">
+        <li><a href="#" style="font-weight:600; font-family: strong;" id="important">!!IMPORTANT!!</a></li>
+        <li><a href="#">Strictly no usage of my artworks without permission from me.</a></li>
+    </div>
+    </ul>
+    
+</footer>
+
+</div>
+
+<script src="contact.js"></script>
+<script src="home.js"></script>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "Ve30pFcEiOTMei3el",
+      });
+   })();
+</script>
+</body>
+</html>

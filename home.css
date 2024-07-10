@@ -1,0 +1,577 @@
+*{
+    padding: 0px;
+    margin:0px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    
+}
+::-webkit-scrollbar{
+    background-color: rgb(27, 27, 27);
+}
+::-webkit-scrollbar-thumb{
+    background-color:  rgb(226, 226, 255);
+    border-radius: 20px;
+}
+
+body{
+    background-color: rgb(17, 17, 17);
+    height: 4000px;
+}
+header{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.09);
+    transition: 0.5s ease-in-out;
+   width: 100%;
+}
+header ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+header ul li a{
+    color: white;
+    transition: 0.1s ease-in;
+}
+header h1{
+    font-weight: 100;
+    color: rgb(226, 226, 255);
+    padding: 10px;
+    border-right: 1px solid rgba(255, 255, 255, 0.687);
+    
+}
+header ul li a:hover{
+    transition: 0.1s ease-out;
+    text-decoration: underline;
+}
+header ul img{
+    height: 50px;
+}
+
+.welcomeParent{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+.welcomePage{
+    margin-top: 250px;
+    display: flex;
+    background-color: rgba(23, 23, 23, 0.708);
+    width:900px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.welcomePage h1{
+    color: white;
+    font-weight: 100;
+    padding: 20px;
+}
+.welcomePage ul li{
+    list-style: none;
+    border-left: 1px solid rgba(255, 255, 255, 0.635);
+}
+.welcomePage ul li p{
+    padding: 10px;
+    color: rgb(231, 231, 231);
+    word-spacing: 6px;
+}
+
+.showcaseParent{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+.showcasePage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 900px;
+    margin-top: 150px;
+    background-color: rgba(23, 23, 23, 0.708);
+}
+.showcasePage ul li{
+    list-style: none;
+    padding-left: 15px;
+    
+}
+.showcasePage ul li h1{
+    color: rgb(226, 226, 255);
+    padding:5px;
+    
+}
+.showcasePage ul li p{
+    color: rgb(231, 231, 231);
+    padding: 10px;
+    word-spacing: 5px;
+}
+.showcaseGrid{
+    padding:25px;
+}
+.showcaseGrid img{
+  height: 500px;
+  border-radius: 10px;
+  width: auto;
+  max-width: 100%;
+ min-width: 490px;
+ object-fit: cover;
+ cursor: pointer;
+ transition: 0.2s ease-in;
+ box-shadow: 0px 5px 20px rgba(255, 255, 255, 0.042);
+ 
+}
+.showcaseGrid img:hover{
+    transition: 0.2s ease-out;
+    filter:contrast(90%);
+}
+.showcaseButtons{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    align-items: center;
+    
+}
+.showcaseButtons button{
+    padding: 5px;
+    margin-left: 10px;
+    background-color: rgb(34, 34, 34);
+    color:white;
+    border: none;
+    font-size: 1.5rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+.showcaseButtons button:hover{
+    transition: 0.3s ease-out;
+    background-color: rgba(81, 81, 81, 0.544);
+}
+.showcaseButtons button:active{
+    transition: 0.1s ease-in;
+    background-color: black;
+}
+.showcasePage ul li button{
+    margin-top: 10px;
+    margin-left: 10px;
+    border: none;
+    background-color: rgb(55, 55, 55);
+    border-radius: 10px;
+    padding: 10px 25px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    cursor: pointer;
+}
+.showcasePage ul li button:hover{
+    transition: 0.2s ease-out;
+    background-color: rgba(94, 94, 94, 0.707);
+}
+.showcasePage button a{
+    color: white;
+}
+
+.timelapseParent{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+.timelapseParent .timelapsePage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 900px;
+    margin-top: 150px;
+    background-color: rgba(23, 23, 23, 0.708);
+}
+.timelapsePage ul li{
+    list-style: none;
+    padding: 10px;
+}
+.timelapsePage ul li h1{
+    color: rgb(226, 226, 255);
+    padding: 5px;
+}
+.timelapsePage ul li p{
+    color: rgb(231, 231, 231);
+    padding: 10px;
+    word-spacing: 5px;
+}
+.timelapsePage .timelapseVideo video{
+    height: 300px;
+    width: auto;
+    cursor: pointer;
+    padding: 25px;
+   border-left: 1px solid rgba(255, 255, 255, 0.135);
+}
+.timelapsePage button{
+    margin-top: 0px;
+    margin-left: 10px;
+    border: none;
+    background-color: rgb(55, 55, 55);
+    border-radius: 10px;
+    padding: 10px 25px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    cursor: pointer;
+}
+.timelapsePage button:hover{
+    transition: 0.2s ease-out;
+    background-color: rgba(94, 94, 94, 0.707);
+}
+.timelapsePage button a{
+    color: white;
+}
+
+.sticky{
+    transition: 0.5s ease-in-out;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index:100;
+}
+.sticky ul li a{
+    color: black;
+}
+.sticky ul li h1{
+    color: black;
+    border-right: 1px solid black;
+}
+.sticky ul li #mobileDesignMenu{
+    color: rgb(255, 255, 255);
+    background-color: black;
+    border: none;
+}
+
+.tutorialParent{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+.tutorialParent .tutorialPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 900px;
+    margin-top: 150px;
+    background-color: rgba(23, 23, 23, 0.708);
+}
+.tutorialPage ul li{
+    list-style: none;
+    padding: 10px;
+}
+.tutorialPage ul li h1{
+    color: rgb(226, 226, 255);
+    padding: 5px;
+}
+.tutorialPage ul li p{
+    color: rgb(231, 231, 231);
+    padding: 10px;
+    word-spacing: 5px;
+}
+.tutorialPage .tutorialVideo video{
+    height: 300px;
+    width: auto;
+    cursor: pointer;
+    padding: 25px;
+ 
+}
+.tutorialPage button{
+    margin-top: 0px;
+    margin-left: 10px;
+    border: none;
+    background-color: rgb(55, 55, 55);
+    border-radius: 10px;
+    padding: 10px 25px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    cursor: pointer;
+}
+.tutorialPage button:hover{
+    transition: 0.2s ease-out;
+    background-color: rgba(94, 94, 94, 0.707);
+}
+.tutorialPage button a{
+    color: white;
+}
+
+.blogParent{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+.blogParent .blogPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 900px;
+    margin-top: 150px;
+    background-color: rgba(23, 23, 23, 0.708);
+}
+.blogPage ul li{
+    list-style: none;
+    padding: 10px;
+}
+.blogPage ul li h1{
+    color: rgb(226, 226, 255);
+    padding: 5px;
+}
+.blogPage ul li p{
+    color: rgb(231, 231, 231);
+    padding: 10px;
+    word-spacing: 5px;
+}
+.blogPage .blogImage img{
+    height: 300px;
+    width: auto;
+    cursor: pointer;
+    padding: 25px;
+
+}
+.blogPage button{
+    margin-top: 0px;
+    margin-left: 10px;
+    border: none;
+    background-color: rgb(55, 55, 55);
+    border-radius: 10px;
+    padding: 10px 25px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    cursor: pointer;
+}
+.blogPage button:hover{
+    transition: 0.2s ease-out;
+    background-color: rgba(94, 94, 94, 0.707);
+}
+.blogPage button a{
+    color: white;
+}
+
+.commissionParent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+.commissionParent .commissionPage{
+    margin-top: 250px;
+    border-left: 1px solid rgba(255, 255, 255, 0.755);
+    display: flex;
+    background-color: rgba(23, 23, 23, 0.708);
+    width: 900px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.commissionPage h1{
+    color: white;
+    font-weight: 100;
+    padding: 20px;
+    
+}
+.commissionPage ul li{
+    list-style: none;
+}
+.commissionPage ul li p{
+    padding: 10px;
+    color: rgb(231, 231, 231);
+    word-spacing: 6px;
+}
+
+.contactParent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /
+}
+
+.contactParent .contactForm {
+    display: flex;
+    margin-top: 50px;
+    width: 100%; 
+    max-width: 900px;
+}
+
+.contactForm ul {
+    width: 100%;
+    padding: 0; 
+    margin: 0; 
+    background-color: rgb(28, 28, 28);
+    border-radius: 10px;
+}
+
+.contactForm ul li {
+    list-style: none;
+    width: 100%;
+    padding: 10px;
+}
+
+.contactForm ul li input,
+.contactForm ul li textarea {
+    outline: none;
+    padding: 12px;
+    width: 100%;
+    box-sizing: border-box; 
+   border: 1px solid rgb(42, 42, 42);
+   background-color: rgb(32, 32, 32);
+   color: white;
+   border-radius: 5px;
+   margin-top: 10px;
+}
+.contactForm ul li textarea{
+    height:240px;
+
+}
+
+.contactForm ul li textarea {
+    resize: none; 
+}
+.contactForm ul li button{
+    border: none;
+    cursor: pointer;
+    padding: 5px 15px;
+    background-color: rgb(116, 116, 214);
+    color: white;
+    border-radius: 7px;
+    transition: 0.2s ease-in;
+}
+.contactForm ul li h2{
+    color: rgb(226, 226, 255);
+}
+.contactForm ul li button:hover{
+    transition: 0.2s ease-out;
+    background-color: rgb(70, 70, 163);
+   color: white;
+}
+.contactForm ul li button:active{
+    background-color: black;
+}
+
+#mobileDesign{
+    border: none;
+    display: none;
+    color: white;
+}
+#mobileDesignMenu{
+    display: none;
+}
+#mobileMenu{
+    display: none;
+}
+
+.input-error{
+    transition: 0.2s ease-in-out;
+    border-color: red !important;
+
+}
+.msgError{
+    transition: 0.2s ease-in-out;
+    border:1px solid red !important;
+}
+
+.footerParent{
+    display: flex;
+    justify-content: center;
+    padding:15px;
+}
+footer{
+    display: flex;
+    justify-content: start;
+    padding: 5px 10px;
+    align-items: start;
+    text-align: start;
+    margin-top: 200px;
+    background-color: rgb(28, 28, 28);
+    width: 900px;
+    height: 200px;
+}
+footer ul li{
+    list-style: none;
+    padding: 2px;
+    
+    
+}
+footer ul li a{
+    color: rgb(106, 106, 106);
+    font-weight: 100;
+    padding: 10px;
+   
+   
+}
+.lock{
+    border-left: 1px solid rgba(255, 255, 255, 0.426);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.426);
+}
+.locked{
+    border-left: 1px solid rgba(255, 255, 255, 0.426);
+   border-top: 1px solid rgba(255, 255, 255, 0.426);
+    margin-top: 20px;
+}
+footer ul li h1{
+    font-weight: 600;
+}
+footer #ul{
+    margin-left: 25px;
+}
+footer #ul li{
+    display: inline-block;
+    padding: 5px;
+}
+footer #ul li a{
+    font-size: 2rem;
+}
+@media screen and (min-width:300px) and (max-width:700px){
+    .showcaseGrid img{
+        min-width: 200px;
+    }
+    header h1{
+        font-size: 1.8rem;
+    }
+ .tutorialPage .tutorialVideo video{
+        height: 150px;
+    }
+    .timelapsePage .timelapseVideo video{
+        height: 150px;
+    }
+    .blogPage .blogImage img{
+        height: 150px;
+    }
+    #pcDesign{
+        display: none;
+    }
+    #mobileDesignMenu{
+        display: block;
+      background-color: transparent;
+     color: white;
+     border: none;
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
+   
+    .mobileContainer{
+       position: fixed;
+       top:75px;
+      background:linear-gradient(rgba(0, 0, 0, 0.582), black);
+       z-index: 99;
+       width: 100%;
+       height:1000px;
+    }
+    .mobileContainer ul li{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 5px 10px;
+        margin-top: 35px;
+     
+    }
+    .mobileContainer ul li a{
+        color: white;
+    }
+}
